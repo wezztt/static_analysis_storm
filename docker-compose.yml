@@ -2,8 +2,7 @@ version: '3'
  
 services:
   php_static_analyzer:
-    build: ./service
-    image: php_static_analyzer:latest
+    image: wezztt/php:static
     container_name: php_static_analyzer
     tty: true
     volumes:

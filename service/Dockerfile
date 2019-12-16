@@ -1,5 +1,6 @@
 FROM wezztt/php:7.3-ci-alpine
 
+ENV COMPOSER_HOME /root/.composer
 #Code Sniffer
 RUN composer global require "squizlabs/php_codesniffer=*"
 RUN ln -s /root/.composer/vendor/bin/phpcs /usr/local/bin/phpcs
