@@ -1,4 +1,4 @@
-FROM wezztt/php:7.3-ci-alpine
+FROM rzbender/php:7.3-ci-alpine
 
 ENV COMPOSER_HOME /root/.composer
 #Code Sniffer
