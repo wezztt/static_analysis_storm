@@ -8,5 +8,3 @@
 2. В `PHP Code Sniffer path` указать абсолютный путь к `phpcs.sh` файлу
 ![alt text](docs/sniffer_settings.png "")
 3. Аналогичным образом насторить `Mess Detector` и `PHP CS Fixer` (указать `phpmd.sh` и `php-cs-fixer.sh` соответственно)
-##TODO ??
-- Возможно, доработать данный контейнер для запуска анализаторов для git preCommit хуков

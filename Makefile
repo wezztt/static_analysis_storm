@@ -5,6 +5,7 @@ install:
 	sudo chmod +x phpmd.sh
 
 docker-up:
+	docker pull wezztt/php:static
 	docker-compose up -d
 
 docker-down:
