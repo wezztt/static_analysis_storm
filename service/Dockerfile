@@ -10,7 +10,7 @@ RUN php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');" &&
     chmod +x composer.phar && mv composer.phar /usr/bin/composer
 
 #Code Sniffer && Mess Detector && CS Fixer && phpstan
-RUN composer global require "squizlabs/php_codesniffer:*" "phpmd/phpmd:*" "friendsofphp/php-cs-fixer:*" "phpstan/phpstan:*" && \
+RUN composer global require "squizlabs/php_codesniffer" "phpmd/phpmd" "friendsofphp/php-cs-fixer" "phpstan/phpstan" && \
     ln -s /root/.composer/vendor/bin/phpcs /usr/local/bin/phpcs && \
     ln -s /root/.composer/vendor/bin/phpmd /usr/local/bin/phpmd && \
     ln -s /root/.composer/vendor/bin/php-cs-fixer /usr/local/bin/php-cs-fixer && \
